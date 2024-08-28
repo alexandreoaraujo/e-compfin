@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <title>Notas - HTML</title>
+</head>
+
+<body>
+<header>
+<h1>Notas - HTML</h1>
+</header>
+
+<a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics"> Link HTML basics</a>
+<ul>
+<li>computers/web servers are case-sensitive, always use lowercase with no space</li>
+<li>words must be separeted by hyphens</li>
+<li>even if developing on windows, should use forward slashes / in my code</li>
+</ul>
+
+<h3>Anatomy of an HTML element</h3>
+
+<p><strong>tags:</strong> used to create elements </p>
+<p>ex.: &lt;tag&gt; content &lt;/tag&gt;</p>
+
+<p><strong>element:</strong> part of a webpage. may contain a data item or a chunk of text or a image, or perhaps nothing.</p>
+<p>ex.:  &lt;p&gt;This is an element&lt;/p&gt; </p>
+<p>&lt;p&gt; = opening tag</p>
+<p>"This is an element" = content</p>
+<p>&lt;/p&gt; = closing tag</p>
+
+<p><strong>attributes:</strong>  contain extra info about the element that I don't want to appear in the actual content</p>
+<p>ex.: &lt;p&gt; class= "editor-note"> content &lt;/p&gt;</p>
+<p>"class" is the attribute name and "editor-note" is the attribute value</p>
+<p>note: it is recommended that you quote "" all attribute values, as it makes the code more consistent and understandable</p>
+
+<p><strong>nesting elements:</strong> putting elements inside other elements</p>
+<p>ex.:  &lt;p&gt;This is an &lt;strong&gt;<strong>nested </strong>&lt;/strong&gt; element&lt;/p&gt; </p>
+
+<h3>Anatomy of an HTML document</h3>
+
+<p><code>&lt;!DOCTYPE html&gt;</code> : its a required preamble. however, they don't do much and are basically just needed to make sure your document behaves correctly.</p>
+
+<p><code>&lt;html&gt;&lt;/html&gt;</code>: this element wraps all the content on the entire page. also includes the <i>lang</i> attribute, setting the primary language of the page.</p>
+
+<p><code>&lt;meta charset="utf-8"&gt;</code>: this element sets the character set the document should use to UTF-8. there is no reason to not set this, and it can help avoid some problemns. </p>
+
+<p><code>&lt;meta name="viewport" content="width=device-width"&gt;</code>:the viewport element ensures the page renders at the windth of viewport, preventig mobile browsers from rendering pages wider than the viewport and then shrinking them down. </p>
+
+<p><code>&lt;title&gt;&lt;/title&gt;</code>: sets the title of the page,wich is the title that appears in the browser tab.</p>
+
+<p><code>&lt;body&gt;&lt;/body&gt;</code>: contains all the content that I want to show to web users when they visit my page.</p>
+
+<p><b>images:</b> it embeds an image into my page. it does this via the <i>src</i> (source) attribute, which contains the path to our image file.</p>
+<p>ex.: &lt;img src="path to image" alt="descriptive text for users who cannot see the image" /&gt;</p>
+<img src="test-site/images/test-image.jpeg" alt="this is an AI genereted image of my dog Guri wearing a suit" />
+
+<h3>Marking up text</h3>
+
+<p><b>headings:</b> headings elements allow to specify that certain parts of my content are headings -or subreading. HTML contains 6 heading levels, &lt;h1&gt; to &lt;h6&gt;</p>
+<p>headings should not be used to make text bigger or bold. Try to create a sequence of heading.</p>
+
+<p><b>paragraphs:</b> this element contains paragraphs of text.</p>
+<p>ex.: &lt;p&gt; this is a single paragraph &lt;/p&gt;</p>
+
+<p><b>lists:</b> consists of at least 2 elements:</p>
+
+<ul>
+    <li><b>&lt;ul&gt;</b> are for unordered lists, where the order of the items doesn't matter.</li>
+    <li><b>&lt;ol&gt;</b> are for ordered lists, where the order of the items does matter.</li>
+</ul>
+<p>each iten inside the lists is put aside an &lt;li&gt; (list item) element </p>
+
+<h3>Links</h3>
+<p><b>&lt;a&gt;</b> element is used to create links to other pages
+<p>the <i>href</i> attribute is filled with the web address that the link point to</p>
+<p>ex.:<a href="https://www.ufrgs.br/ecompfin/">
+    e-compfin
+  </a> 
+</p>
+
+</body>
+</html>
